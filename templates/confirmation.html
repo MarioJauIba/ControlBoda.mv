@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/materialize.css') }}>
+    <title>Confirmacion de asistencia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirma tu asistencia</h1>
+        <h3>{{ invite_data['name'] }} ({{ invite_data['adults'] }} adultos, {{ invite_data['children'] }} menores)</h3>
+        <form method="post">
+            <div class="row">
+                <div class="input-field col s12 m6 offset-m3 l6">
+                    <select id="confirmed" name="confirmed" required>
+                        <option value="" disabled selected>Confirma tu asistencia</option>
+                        <option value="true">Si</option>
+                        <option value="false">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 m3 offset-m3 l3">
+                    <label for="adults">Adultos</label>
+                    <input type="number" min="1" max="{{ invite_data['adults'] }}" id="confirmed_adults" name="confirmed_adults" placeholder="1" required/>
+                </div>
+                <div class="input-field col s6 m3 l3">
+                    <label for="children">Menores</label>
+                    <input type="number" min="0" max="{{ invite_data['children'] }}" id="chidlren" name="confirmed_children" placeholder="0" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 offset-s3 offset-m5 m2 l2 offset-l5">
+                    <button type="submit" class="btn waves-effect waves-light">Confirmar</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+    <script src={{ url_for('static', filename='js/materialize.js') }}></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+</html>

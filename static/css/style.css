@@ -1,0 +1,284 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+  font-family: "The Seasons";
+  src: url("../fonts/Fontspring-theseasons-reg.otf") format("opentype");
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #9b06e6;
+}
+
+.parallax-container {
+  min-height: 350px;
+  line-height: 0;
+  min-width: max-content;
+  color: rgba(189, 145, 247, 0.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .parallax-container {
+    height: 250px;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+a.ex1 {
+  font-size: 83px;
+}
+
+a.ex2 {
+  font-size: 60px;
+}
+
+a.ex3 {
+  font-size: 27px;
+}
+a.ex4 {
+  font-size: 20px;
+}
+
+a.ex5 {
+  font-size: 15px;
+}
+a.ex6 {
+  font-size: 25px;
+}
+
+label.ex6 {
+  font-size: 25px;
+}
+
+input.ex6 {
+  font-size: 20px;
+}
+
+input.select-dropdown {
+  font-size: 25px !important;
+}
+
+#confirmed_adults {
+  font-size: 30px !important;
+}
+
+#confirmed_children {
+  font-size: 30px !important;
+}
+
+select.ex6 { 
+  font-size: 40px !important; 
+}
+
+span.ex6 {
+  font-size: 25px !important; 
+}
+
+span.span-size {
+  display: inline-block;
+  width: 70px;
+  font-size: 35px;
+  color:white;
+}
+
+.transparencia{
+  background:rgba(192, 192, 192, 0.589);
+}
+
+
+.waterfall-regular {
+  font-family: "Waterfall", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-oficial {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-upright-regular {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-upright-medium {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.julius-sans one-regular {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.inspiration-regular {
+  font-family: "Inspiration", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mrs-saint-delafield-regular {
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-img {
+  background-image: url("../mv21/01.jpg");
+
+  min-height: 740px;
+  max-height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.margin-tag {
+    margin:20%;
+    position: absolute;
+}
+
+.bottom-tag {
+  margin:20%;
+  position: absolute;
+  bottom:0;
+}
+
+@media screen and (min-width: 600px) {
+  .ocultar-div{
+      display:none;
+  }
+  a.ex4 {
+    font-size: 25px;
+  }
+  
+}
+
+.blue-darkgray-color{
+  background-color: #494E76 !important;
+  
+}
+
+.blue-lihtgray-color{
+  color: #494e768e;
+}
+
+.purple-color{
+  background-color: #A097AE;
+}
+
+.zyd-purple-text {
+  color: #A097AE;
+}
+
+.purple-color{
+  background-color: #A097AE !important;
+}
+
+.active{
+  background-color: #A097AE !important;
+}
+
+#gallery {
+  min-height: 700px;
+  max-height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+input.select-dropdown {
+  color: white;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+svg path:first-child {
+  fill: white;
+}
+
+input[type=number] {
+  color: white;
+}
+
+.logo {
+  max-width: 240px;
+}
+
+.liverpool-pink {
+  background-color: #e83e8c;
+  
+}
+
+.liverpool-logo {
+  padding-top: 1rem;
+}

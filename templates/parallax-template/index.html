@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Boda Vanessa y Mario</title>
+  <meta name="title" content="Boda Vanessaaaa y Mario" />
+  <meta name="description" content="Nos encantaría que nos acompañen en este día tan especial." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zairaydiego.net/" />
+  <meta property="og:title" content="Boda Zaira y Diego" />
+  <meta property="og:description" content="Nos encantaría que nos acompañen en este día tan especial." />
+  <meta property="og:image" content="Prueba.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="http://zairaydiego.net/" />
+  <meta property="twitter:title" content="Boda Vanessa y Mario" />
+  <meta property="twitter:description" content="Nos encantaría que nos acompañen en este día tan especial." />
+  <meta property="twitter:image" content="https://zairaydiego.net/static/mv21/17.jpg" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href={{ url_for('static', filename='css/materialize.css') }}>
+  <link href={{ url_for('static', filename='css/style.css') }} type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inspiration&family=Julius+Sans+One&family=Waterfall&display=swap&family=Cinzel:wght@400..900&family=Cormorant+Upright:wght@300;400;500;600;700&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+</head>
+
+<body >
+      <div >
+        <nav class="white" role="navigation" >
+          <div class="nav-wrapper container" >
+            <ul class="left hide-on-med-and-down ">
+              <li><a href="#start" class="cinzel-oficial">INICIO</a></li>
+            </ul>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#intro" class="cinzel-oficial">PRESENTACION</a></li>
+            </ul>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#places" class="cinzel-oficial">LUGAR</a></li>
+            </ul>  
+              <img class="brand-logo center responsive-img" width="50px" src="{{ url_for('static', filename='mv21/V&M.png') }}" alt="Logo">
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#confirmed" class="cinzel-oficial">ASISTENCIA</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#galery" class="cinzel-oficial">GALERIA</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#gifts" class="cinzel-oficial">REGALOS</a></li>
+            </ul>
+
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+              <i class="material-icons zyd-purple-text">menu</i>
+            </a>
+            
+          </div>
+        </nav>
+  </div>
+
+
+  <ul id="nav-mobile" class="sidenav">
+    <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
+    <li><a href="#start" class="cinzel-oficial sidenav-close">INICIO</a></li>
+    <li><a href="#intro" class="cinzel-oficial sidenav-close">PRESENTACION</a></li>
+    <li><a href="#places" class="cinzel-oficial sidenav-close">LUGAR</a></li>
+    <li><a href="#gifts" class="cinzel-oficial sidenav-close">REGALOS</a></li>
+    <li><a href="#galery" class="cinzel-oficial sidenav-close">GALERIA</a></li>
+    <li><a href="#confirmed" class="cinzel-oficial sidenav-close">ASISTENCIA</a></li>
+  </ul> 
+
+  
+  <div id="start">
+      <div class="main-img">
+        <div class="row transparencia">
+          <div class="col s12 center">
+            <a class="ex1 center light text-lighten-1 white-text waterfall-regular" >Vanessa </a><a class="ex2 center light text-lighten-1 white-text mrs-saint-delafield-regular">&</a> <a class="ex1 center light text-lighten-1 white-text waterfall-regular"> &nbsp;Mario</a>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="row transparencia">
+          <div class="col s12 center ">
+            <br>
+            <a class="ex3 header center light cinzel-oficial grey-text text-darken-3 ">21 DE SEPTIEMBRE DE 2024</a>
+          </div>
+       
+          <div class="col s12 center">
+            <div id="countdown">
+                <span id="days" class="cinzel-oficial span-size "></span>
+                <span id="hours" class="cinzel-oficial span-size "></span>
+                <span id="minutes" class="cinzel-oficial span-size "></span>
+                <span id="seconds" class="cinzel-oficial span-size"></span>
+              <div class="row ">
+                <a class="ex6 cinzel-oficial text-lighten-1 white-text ">DÍAS &nbsp;&nbsp; HRS &nbsp;&nbsp; MIN &nbsp;&nbsp; SEG</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 center">
+          <a href="#confirmed" class="btn-large waves-effect waves-light purple-color cinzel-oficial">
+            <span> CONFIRMA TU ASISTENCIA </span>
+          </a>
+        </div>
+      </div>
+  </div>
+<div class="row">
+<div id="intro">     
+  <div class="row section center ">
+    <div class="col s12 ">
+      <h5 class=" header center light cormorant-upright-regular ">CON LA BENDICIÓN DE DIOS Y NUESTROS PADRES</h5>
+      <br>
+    </div>
+      <div class="col s12 m6">
+        <a class="ex4  black-text cormorant-upright-regular" >Yolanda Valdivia Muñoz</a>
+        <br>
+        <a class="ex4  black-text cormorant-upright-regular" >Luis Enrique de la Mora Orozco</a>
+      </div>
+      <div class="col s12 ocultar-div">
+        <a class="ex4 black-text cormorant-upright-regular" >&</a>
+      </div>
+      <div class="col s12 m6">
+        <a class="ex4 black-text cormorant-upright-regular" >Maria Angelica Ibarra Mendoza</a>
+        <br>
+        <a class="ex4 black-text cormorant-upright-regular" >Mario Jauregui Gomez</a>
+      </div>
+  </div>
+  <div class="row ">
+    <div class="center col s12">
+      <img class="center responsive-img" width="200px" src="{{ url_for('static', filename='mv21/logo01.jpg') }}" >
+    </div>
+  
+    <div class="center col s12 ">
+      <h5 class="header center col s12 light cormorant-upright-regular " style="color: #A097AE; font-weight: bolder;" > «Nos complace invitarte a nuestra boda.» </h5>
+    </div>
+  </div>
+  <div class="row section center ">
+    <div class="col s12 ">
+      <h5 class=" header center light cormorant-upright-regular ">NUESTROS PADRINOS</h5>
+      <br>
+    </div>
+      <div class="col s12 m6">
+        <a class="ex4  black-text cormorant-upright-regular" >Leticia Muñoz Valdivia</a>
+        <br>
+        <a class="ex4  black-text cormorant-upright-regular" >Rosendo Patiño Castellaños</a>
+      </div>
+      <div class="col s12 ocultar-div">
+        <a class="ex4 black-text cormorant-upright-regular" >&</a>
+      </div>
+      <div class="col s12 m6">
+        <a class="ex4 black-text cormorant-upright-regular" >Alma Angelica Jáuregui Ibarra</a>
+        <br>
+        <a class="ex4 black-text cormorant-upright-regular" >Carlos Javier Cruz Franco</a>
+        <br><br>
+      </div>
+  </div>
+    
+</div>
+</div>
+<div class="col s12">
+  <img class="responsive-img" src="{{ url_for('static', filename='mv21/intermedio.jpg') }}">
+</div>
+<div id="places">
+  <div class="row grey lighten-5">
+    <div class="col s12 ">
+      <h3 class="header center light cormorant-upright-regular ">ITINERARIO</h3>
+    </div>
+    <div class="col s12 m4">
+      <div class="icon-block center">
+        <h2 class="center blue-lihtgray-color"><i class="material-icons">church</i></h2>
+        <h4 class="header center light cormorant-upright-regular ">CEREMONIA</h4>
+        
+        <a class="ex4 center black-text cormorant-upright-regular" >Parroquia de San Francisco de Asis</a><br>
+        <a class="ex4 center black-text cormorant-upright-regular" >Tepatitlan de Morelos, Jal.</a><br>
+        <a class="ex4 center black-text cormorant-upright-regular" >1:00 p.m.</a><br><br>
+
+        <a href="https://maps.app.goo.gl/HmunEfJZdUdwSVBk6" class="btn-large waves-effect purple-color">
+                  
+          <span> VER MAPA </span>
+        </a>
+      </div>
+    </div>
+    <!--
+    <div class="col s12 m4">
+      <div class="icon-block center">
+        <h2 class="center blue-lihtgray-color"><i class="material-icons">local_bar</i></h2>
+        <h4 class="header center light cormorant-upright-regular ">CÓCTEL</h4>
+
+        <a class="ex4 center black-text cormorant-upright-regular" >Terraza Hacienda del Lago</a><br>
+        <a class="ex4 center black-text cormorant-upright-regular" >Tepatitlán de Morelos, Jal.</a><br>
+        <a class="ex4 center black-text cormorant-upright-regular" >7:00 p.m.</a><br><br>
+
+        <a href="https://maps.app.goo.gl/xz6eohXZsCmn5zU29" class="btn-large waves-effect waves-light purple-color">
+          <span> VER MAPA </span>
+        </a>
+      </div>
+    </div>
+  --> 
+    <div class="col s12 m4">
+      <div class="icon-block center">
+        <h2 class="center blue-lihtgray-color"><i class="material-icons">celebration</i></h2>
+        <h4 class="header center light cormorant-upright-regular ">RECEPCIÓN</h4>
+
+        <a class="ex4 center black-text cormorant-upright-regular" >Terraza Hacienda del Lago</a><br>
+        <a class="ex4 center black-text cormorant-upright-regular" >Tepatitlán de Morelos, Jal.</a><br>
+        <a class="ex4 center black-text cormorant-upright-regular" >7:00 p.m.</a><br><br>
+
+        <a href="https://maps.app.goo.gl/xz6eohXZsCmn5zU29" class="btn-large waves-effect waves-light purple-color">
+          <span> VER MAPA </span>
+        </a><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="galery">
+  <div class="container">
+    <div class="col s12 ">
+      <h3 class=" header center light cormorant-upright-regular ">GALERÍA</h3>
+      <br>
+    </div>
+    <div class="row">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="{{ url_for('static', filename='mv21/001.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/02.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/03.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/04.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/05.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/06.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/08.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/10.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/12.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/13.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/16.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/17.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/18.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/19.jpg') }}">
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='mv21/20.jpg') }}">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="gifts">
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="header center light cormorant-upright-regular">SUGERENCIA DE REGALOS</h4>
+          <div >
+            <a class="ex4 center black-text cormorant-upright-regular" > Ya que vivimos juntos tenemos lo necesario, pero en este fondo bancario cuyos datos dejamos adjuntos, un aporte voluntario seria un buen regalo. ¡Mil gracias!. </a><br>
+          </div>
+          <div class="section">
+            <!--
+              <div class="row">
+              <div class="col s12 m5 l4 liverpool-pink offset-m1 offset-l2">
+                <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51329730" class="liverpool-pink"><img src="https://assetspwa.liverpool.com.mx/assets/images/logos/liverpool-logo.svg" class="logo liverpool-logo" ></a>
+              </div>
+              <div class="col s12 m5 l4">
+                <a href="https://www.amazon.com.mx/wedding/registry/8VWKLGTUQMDF"><img src="https://assets.aboutamazon.com/88/05/0feec6ff47bab443d2c82944bb09/amazon-logo.png" class="logo"></a>
+              --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<div class="fixed-action-btn scroll-top">
+  <a href="#start" class="btn-floating btn-large purple-color"><i class="large material-icons">keyboard_double_arrow_up</i></a>
+</div>
+    
+
+  <footer class="page-footer purple-color">
+    {% if invite_data %}
+    <div id="confirmed">
+      <div class="container">
+        <div class="row center">
+          {% if 'confirmed' in invite_data  %}
+            {% if invite_data['confirmed'] == 'true' %}
+            <h5 class="header col s12 light cormorant-upright-regular">¡GRACIAS POR ACOMPAÑARNOS!</h5>
+            <h6 class="cormorant-upright-regular">Tu asistencia ha sido confirmada.</h6>
+            <h7 class="cormorant-upright-regular">Nos vemos el 21 de Septiembre {{ invite_data['desc'] }}</h7>
+            <div class="s12">
+              <a href="https://calendar.app.google/5a2qFzUkwTNk6Khh7" class="btn-large waves-effect blue-darkgray-color cinzel-oficial">
+                <span> AGREGAR AL CALENDARIO </span>
+              </a>
+            </div>
+            {% else %}
+            <h5 class="header col s12 light cormorant-upright-regular">Sentimos que no puedan acompañarnos</h5>
+            {% endif %}
+
+          {% endif %}
+          <div class="row center">
+            {% if not 'confirmed' in invite_data %}
+            <div class="container">
+              <h4 class="cinzel-oficial">CONFIRMA TU ASISTENCIA</h4>
+              <h4 class="cormorant-upright-regular">{{ invite_data['name'] }}</h4>
+              <h5 class="cormorant-upright-regular">Favor de confirmar tu asistencia antes del 01 Septiembre</h5>
+              
+              <h5 class="cormorant-upright-regular"> Hemos reservado {{ invite_data['adults'] }} {% if invite_data['adults'] | int == 1 %}lugar {% endif %} {% if invite_data['adults'] | int > 1 %}lugares {% endif %} para ti.</h5>
+              
+              {% if invite_data['children'] | int > 0 %}
+              <h5 class="cormorant-upright-regular"> Los  chiquitines están invitados.</h5>
+              {% endif %}
+            
+              <form method="post">
+                <div class="row">
+                  <div class="input-field col s12 m6 offset-m3 l6 offset-l3 white-text">
+                    <span class="ex6 white-text cormorant-upright-regular">Asistiré</span>
+                  </div>
+                  <div class="input-field col s12 m6 offset-m3 l6 offset-l3 white-text">
+                    <select id="confirmed" name="confirmed" style="font-size:80px !important;" required>
+                      <option value="true" class="cormorant-upright-regular">Si</option>
+                      <option value="false" class="cormorant-upright-regular">No</option>
+                    </select>
+                  </div>
+                  <div id="sorry_msg" class="input-field col s12 m6 offset-m3 l6 offset-l3 white-text">
+                    <span>Sentimos que no puedas estar presente en un día tan importante para nosotros.</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="adults_section" class="input-field col s6 m3 offset-m3 l3 offset-l3">
+                    <label for="adults" class="ex6 white-text cormorant-upright-regular">Adultos</label>
+                    <br>
+                    <input type="number" min="1" max="{{ invite_data['adults'] }}" id="confirmed_adults" name="confirmed_adults" placeholder="1" class="ex6 text-white cormorant-upright-regular" value="0" />
+                  </div>
+                  <div id="children_section" class="input-field col s6 m3 l3">
+                    {% if invite_data['children'] | int > 0 %}
+                    <label for="children" class="ex6 white-text cormorant-upright-regular">Menores</label>
+                    <br>
+                    <input type="number" min="0" max="{{ invite_data['children'] }}" id="confirmed_children" name="confirmed_children" placeholder="0" value="0" class="ex6 text-white cormorant-upright-regular" />
+                    {% else %}
+                    <input type="number" min="0" max="{{ invite_data['children'] }}" id="confirmed_children" name="confirmed_children" placeholder="0" value="0" class="ex6 text-white cormorant-upright-regular hide" />
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 offset-s3 offset-m5 m2 l2 offset-l5">
+                    <button type="submit" class="btn-large waves-effect waves-light blue-darkgray-color">Confirmar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="footer-copyright">
+      <div class="container center">
+        <a class="ex3 center white-text waterfall-regular" >Vanessa & Mario</a><br>
+      Made by <a class="white-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+</div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src={{ url_for('static', filename='js/materialize.js') }}></script>
+  <script src={{ url_for('static', filename='js/init.js') }}></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src={{ url_for('static', filename='js/initialize.js') }}></script>
+  <script src={{ url_for('static', filename='js/countdown.js') }}></script>
+  
+
+  </body>
+</html>

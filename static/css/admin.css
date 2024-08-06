@@ -1,0 +1,3 @@
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #b2dfdb !important;
+  }

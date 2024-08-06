@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href={{ url_for('static', filename='css/admin.css') }} type="text/css" rel="stylesheet" media="screen,projection"/>
+    <title>V&M Admin</title>
+</head>
+<body>
+    <div class="container">
+        <h1>V&M wedding</h1>
+        <h3>Administrador</h3>
+
+        <div class="card">
+            <div class="card-content">
+                <h5>Confirmaciones totales</h5>
+                <p>Resumen de asistentes al evento</p>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width tabs-transparent">
+                    <li class="tab"><a href="#tab1" class="active teal-text text-darken-4">Confirmados</a></li>
+                    <li class="tab"><a href="#tab2" class="teal-text text-darken-4">Pendientes</a></li>
+                </ul>
+                <div class="card-content">
+                    <div id="tab1" class="row">
+                        <div class="col s6 m6 l6 center-align">Adultos {{ totals['adults_total_confirmed'] }}</div>
+                        <div class="col s6 m6 l6 center-align">Menores {{ totals['children_total_confirmed'] }}</div>
+                    </div>
+                    <div id="tab2" class="row">
+                        <div class="col s6 m6 l6 center-align">Adultos {{ totals['adults_pending'] }}</div>
+                        <div class="col s6 m6 l6 center-align">Menores {{ totals['children_pending'] }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s4 offset-m4 m4 offset-m5 l2 offset-l5">
+                <a class="waves-effect waves-light btn modal-trigger teal darken-4" href="#addFamily">Agregar familia</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="collection">
+                {% for entry in data %}
+                <li class="collection-item avatar">
+                    <img src={{ url_for('static', filename='icons/family_icon_big.png') }} alt="famicon" class="circle">
+                    <span class="title">{{ entry['name'] }}</span>
+                    <p>{{ entry['desc'] }}</p>
+                    <p>Adultos: {{ entry['adults'] }}</p>
+                    <p>Menores: {{ entry['children'] }}</p>
+                    <p>Tel: {{ entry['phone'] }}</p>
+                    <p>URL: https://zairaydiego.net/invite/{{ entry['id'] }}
+                        <button class="btn btn-small teal darken-4" onclick="writeClipboardText('https://zairaydiego.net/invite/{{ entry['id'] }}')">
+                            <i class="material-icons">content_copy</i>
+                        </button> 
+                    </p>
+                    {% if entry['confirmed'] == 'true' %}
+                    <a href="#!" class="secondary-content"><i class="material-icons teal-text text-darken-4">check</i></a>
+                    {% elif entry['confirmed'] == 'false' %}
+                    <a href="#!" class="secondary-content"><i class="material-icons teal-text text-darken-4">close</i></a>
+                    {% else  %}
+                    <a href="#!" class="secondary-content"><i class="material-icons teal-text text-darken-4">question_mark</i></a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div id="addFamily" class="modal">
+            <div class="modal-content">
+                <div class="row">
+                    <h4>Agregar familia</h4>
+                    <form method="post" onsubmit="clearForm">
+                        <div class="input-field col s12 m12 l12">
+                            <label for="name">nombre</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="input-field col s12 m12 l12">
+                            <label for="desc">descripcion</label>
+                            <input type="text" name="desc" id="desc" required />
+                        </div> 
+                        <div class="input-field col s6 m6 l6">
+                            <label for="adults">adultos</label>
+                            <input type="number" name="adults" id="adults" min="1" max="10" required />
+                        </div>
+                        <div class="input-field col s6 m6 l6">
+                            <label for="children">menores</label>
+                            <input type="number" name="children" id="children" min="0" max="10" required />
+                        </div>
+                        <div class="input-field col s12 m12 l12">
+                            <label for="phone">telefono</label>
+                            <input type="tel" name="phone" id="phone" required />
+                        </div>
+                        <div class="input-field col s4 offset-s4 m2 offset-m5 l2 offset-l5">
+                            <button type="submit" class="btn teal darken-4">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src={{ url_for('static', filename='js/initialize.js') }}></script>
+</body>
+</html>
